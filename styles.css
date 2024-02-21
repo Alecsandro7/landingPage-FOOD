@@ -64,7 +64,7 @@ header {
 }
 
 .btn-default:hover {
-    background-color: #f8d477;
+    background-color: #f7ce00;
 }
 
 #mobile-btn {
@@ -135,6 +135,4 @@ header {
 }
 
 /* main */
-.content{
-    
-}
+.content {}
