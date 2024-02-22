@@ -77,6 +77,7 @@ section {
 
 #mobile_menu {
     display: none;
+
 }
 
 @media screen and (max-width:1170px) {
@@ -94,22 +95,21 @@ section {
         font-size: 1.5rem;
         cursor: pointer;
         z-index: 9999999;
-
+        transition: .2s;
     }
 
     #mobile_menu.active {
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        background-color: rgba(0, 0, 0, 0.944);
+        background-color: rgba(176, 148, 78, 0.766);
         height: 100vh;
         width: 50%;
         position: fixed;
         top: 0;
         right: 0;
         z-index: 999999;
-
+        transition: all 1s;
     }
 
 
@@ -277,4 +277,139 @@ section {
     }
 }
 
-@media screen and (max-width:450px) {}
+
+@media screen and (max-width:600px) {
+
+    #phone_button {
+        font-size: 12px;
+        font-weight: bold;
+        padding: 0px 18px;
+    }
+
+    #phone_button button {
+        display: none;
+    }
+
+}
+
+/* menu */
+
+.menu {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.menu-title {
+    color: #e9a209;
+    font-weight: bold;
+    font-size: 2rem
+}
+
+.menu-subtitle {
+    font-weight: bold;
+    font-size: 2.4rem
+}
+
+.plates-list {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1.7rem;
+
+}
+
+.plate {
+    width: 25%;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+
+}
+
+.plate-heart {
+    background-color: #e9a209;
+    color: #FFF9EA;
+    position: absolute;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    width: 70px;
+    height: 70px;
+    top: -10px;
+    right: -10px;
+    border-radius: 0px 37px;
+}
+
+.plate-description {
+    color: #434343;
+    text-align: center;
+}
+
+.plate-reviews {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plate-reviews i {
+    color: #e9a209;
+    margin-right: 3px;
+
+}
+
+.plate-reviews span {
+    margin-left: 6px;
+}
+
+.plate-price {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.price {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:1270px) {
+    .plates-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .plate {
+        width: calc(50% - 25px);
+    }
+}
+
+@media screen and (max-width:600px) {
+
+
+    .plate {
+        width: 100%;
+    }
+
+    .menu-subtitle {
+        font-size: 1.5rem;
+    }
+}
