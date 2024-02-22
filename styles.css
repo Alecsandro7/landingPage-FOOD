@@ -543,3 +543,27 @@ testimonials mobile */
 
     }
 }
+
+/* footer */
+.footer-content {
+    background-color: #ffe8b4;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+.copyright {
+    color: #000000;
+    font-weight: bold;
+}
+
+@media screen and (max-width:613px) {
+    .footer-items {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}
